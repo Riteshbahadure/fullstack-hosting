@@ -6,7 +6,6 @@ require("dotenv").config({ path: ".env" })
 
 const app = express()
 
-//middlewares
 app.use(express.json())
 app.use(express.static("dist"))
 app.use(cors({
